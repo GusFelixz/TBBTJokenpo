@@ -1,0 +1,24 @@
+Escolha do Jogo: O usuário escolhe entre "Pedra", "Papel", "Tesoura", "Lagarto" ou "Spock". 
+Escolha do Computador: O aplicativo gera aleatoriamente uma escolha entre as cinco opções. 
+Cálculo e Verificação: O aplicativo compara a escolha do usuário com a do computador e aplica as regras para determinar o vencedor: 
+Tesoura corta Papel 
+Papel cobre Pedra 
+Pedra esmaga Lagarto 
+Lagarto envenena Spock 
+Spock esmaga Tesoura 
+Tesoura decapita Lagarto 
+Lagarto come Papel 
+Papel refuta Spock 
+Spock vaporiza Pedra 
+Pedra quebra Tesoura 
+Resultado: Exibe uma mensagem indicando a escolha do usuário, a escolha do computador e o vencedor. 
+Funcionalidades Adicionais (DESAFIO – NÃO OBRIGATÓRIO): 
+
+Feedback Visual: Mostrar imagens correspondentes às escolhas (por exemplo, uma pedra, uma folha de papel, etc.). 
+Explicação das Regras: Incluir uma seção com as regras detalhadas do jogo, explicando todas as interações possíveis. 
+Placares: Manter um registro de quantas rodadas o usuário ganhou, perdeu ou empatou. 
+Modo "Melhor de 3": Implementar uma sequência de partidas onde o primeiro a vencer 3 rodadas é o vencedor final. 
+Desafios Adicionais (DESAFIO – NÃO OBRIGATÓRIO): 
+
+Animações: Incluir animações para cada escolha ou para o momento da comparação. 
+Níveis de Dificuldade: Ajustar o algoritmo de escolha do computador para ser mais "esperto" em níveis mais altos

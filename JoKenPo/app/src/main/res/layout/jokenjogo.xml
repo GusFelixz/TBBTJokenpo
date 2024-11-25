@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/selecionaSpock"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="29dp"
+        android:onClick="selecionaSpock"
+        app:layout_constraintEnd_toStartOf="@+id/selecionaLagarto"
+        app:layout_constraintStart_toEndOf="@+id/selecionaTesoura"
+        app:layout_constraintTop_toBottomOf="@+id/imagemResultado"
+        app:srcCompat="@drawable/spockjokenpo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/selecionaLagarto"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="selecionaLagarto"
+        app:layout_constraintBottom_toTopOf="@+id/selecionaPapel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selecionaSpock"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@drawable/lagartojokenpo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/selecionaPapel"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="selecionaPapel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/selecionaLagarto"
+        app:layout_constraintStart_toEndOf="@+id/selecionaPedra"
+        app:srcCompat="@drawable/papel"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/selecionaPedra"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="selecionaPedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/selecionaPapel"
+        app:layout_constraintStart_toEndOf="@+id/selecionaTesoura"
+        app:srcCompat="@drawable/pedra"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/selecionaTesoura"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="27dp"
+        android:onClick="selecionaTesoura"
+        app:layout_constraintBottom_toTopOf="@+id/selecionaPedra"
+        app:layout_constraintEnd_toStartOf="@+id/selecionaSpock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:srcCompat="@drawable/tesoura"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imagemResultado"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoJogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/resultado"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/botaoVolta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996"
+        app:srcCompat="@drawable/voltar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/imagemResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagemResultado" />
+
+    <ImageView
+        android:id="@+id/resultadoJogador"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="406dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemResultado"
+        app:srcCompat="@drawable/resultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
